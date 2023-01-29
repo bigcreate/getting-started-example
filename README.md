@@ -1,4 +1,4 @@
-# Lerna Getting Started Example
+# Lerna Getting Started Example1
 
 This repo is a small example of using Lerna 5+.
 
