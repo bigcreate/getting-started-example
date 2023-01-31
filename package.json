@@ -4,7 +4,7 @@
   "scripts": {
     "verify": "node scripts/verify-version.js",
     "verdaccio": "verdaccio",
-    "publish": "lerna publish --no-private --registry http://localhost:4873/"
+    "publish": "lerna publish patch --no-private --registry http://localhost:4873/"
   },
   "devDependencies": {
     "lerna": "^6.4.1"
