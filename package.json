@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "verify": "node scripts/verify-version.js",
+    "verdaccio": "verdaccio",
     "publish": "lerna publish --no-private --registry http://localhost:4873/"
   },
   "devDependencies": {
@@ -10,5 +11,8 @@
   },
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "verdaccio": "5.20.1"
+  }
 }
