@@ -19,5 +19,5 @@ install: # Hook provided by Travis CI
 
 # Tell Travis CI to run the test for your Node application
 script:
-- npm run verdaccio
+# - npm run verdaccio
 - npm run publish
