@@ -1,3 +1,6 @@
+branches:
+  only:
+  - prelerna
 # Set the language Travis CI should expect.
 language: node_js
 
