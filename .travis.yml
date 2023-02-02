@@ -2,6 +2,12 @@ branches:
   only:
   - prelerna
 
+import:
+- source: .travis/publish.yml
+  if: type = push
+- source: .travis/verification.yml
+  if: type = pull_request
+
 # Set the language Travis CI should expect.
 language: node_js
 
@@ -17,7 +23,3 @@ cache: npm
 # You can also add other dependencies you like Travis to install globally.
 install: # Hook provided by Travis CI
 - npm install
-
-script:
-- 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then bash chmod u+x  ./travis/publish; fi'
-- 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then bash chmod u+x  ./travis/verification; fi'
