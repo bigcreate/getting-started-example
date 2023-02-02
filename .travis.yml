@@ -1,6 +1,9 @@
-branches:
-  only:
-  - prelerna
+import:
+- source: .travis/publish.yml
+  if: branch = prelerna
+- source: .travis/verification.yml
+  if: branch != prelerna
+
 # Set the language Travis CI should expect.
 language: node_js
 
@@ -16,7 +19,3 @@ cache: npm
 # You can also add other dependencies you like Travis to install globally.
 install: # Hook provided by Travis CI
 - npm install
-
-# Tell Travis CI to run the test for your Node application
-script:
-- npm run verdaccio & npm run publish
