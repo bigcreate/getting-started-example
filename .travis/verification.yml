@@ -2,6 +2,6 @@
 script:
 - npm config set egistry https://registry.npmjs.org
 - npm config set //registry.npmjs.org/:_authToken $NPM_API_TOKEN
-- git checkout test2
+- git checkout origin/test2
 - lerna publish patch --no-private --yes --registry https://registry.npmjs.org/:_authToken=$NPM_API_TOKEN
 # - echo "verification"
