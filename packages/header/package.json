@@ -1,11 +1,16 @@
 {
-  "name": "header",
+  "name": "my_test_package_header",
   "version": "0.0.4",
   "main": "dist/index.js",
   "scripts": {
     "build": "rimraf dist && rollup --config",
     "test": "jest",
     "verify": "node ../../scripts/verify-version.js typescript"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bigcreate/getting-started-example.git",
+    "directory": "packages/header"
   },
   "dependencies": {
     "@testing-library/react": "13.3.0",

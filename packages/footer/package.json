@@ -7,6 +7,11 @@
     "test": "jest",
     "verify": "node ../../scripts/verify-version.js typescript"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bigcreate/getting-started-example.git",
+    "directory": "packages/footer"
+  },
   "dependencies": {
     "@testing-library/react": "13.3.0",
     "@types/jest": "^27.0.3",
