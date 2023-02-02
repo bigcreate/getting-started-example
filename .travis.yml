@@ -19,4 +19,4 @@ cache: npm
 
 script:
 - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; lerna --version ; fi'
-- 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then lerna verify"; fi'
+- 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then lerna verify; fi'
