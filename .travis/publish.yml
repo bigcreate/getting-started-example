@@ -3,6 +3,6 @@ script:
 - npm config set egistry https://registry.npmjs.org
 - npm config set //registry.npmjs.org/:_authToken $NPM_API_TOKEN
 - git checkout prelerna
-- lerna publish patch --no-private --yes --registry https://registry.npmjs.org/:_authToken=$NPM_API_TOKEN --no-push
+- lerna publish patch --no-private --yes
 - git push --follow-tags --no-verify origin prelerna
 
