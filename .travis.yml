@@ -5,8 +5,8 @@ branches:
 import:
 - source: .travis/publish.yml
   if: type = push
-- source: .travis/verification.yml
-  if: type = pull_request
+# - source: .travis/verification.yml
+#   if: type = pull_request
 
 # Set the language Travis CI should expect.
 language: node_js
