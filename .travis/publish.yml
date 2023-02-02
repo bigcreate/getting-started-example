@@ -1,3 +1,5 @@
 # Tell Travis CI to run the test for your Node application
 script:
-- echo "publish"
+- git checkout main
+- lerna publish patch --no-private --yes --registry https://registry.npmjs.org/:_authToken=${NPM_API_TOKEN}
+
