@@ -19,5 +19,5 @@ install: # Hook provided by Travis CI
 - npm install
 
 script:
-- 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; lerna --version'
-- 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then lerna  run verify'
+- 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then lerna --version; fi'
+- 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then lerna  run verify; fi'
