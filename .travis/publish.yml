@@ -1,8 +1,8 @@
 # Tell Travis CI to run the test for your Node application
 script:
 - npm config set egistry https://registry.npmjs.org
-- npm config set //registry.npmjs.org/:_authToken $NPM_API_TOKEN
+- npm config set //registry.npmjs.org/:_authToken ${NPM_API_TOKEN}
 - git checkout prelerna
-- lerna publish patch --no-private --yes
+- lerna publish patch --no-private --yes --registry https://registry.npmjs.org/:_authToken=${NPM_API_TOKEN} --no-push
 - git push --follow-tags --no-verify origin prelerna
 
