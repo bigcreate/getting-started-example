@@ -5,6 +5,5 @@ script:
 - git checkout prelerna
 - lerna publish patch --no-private --yes --no-push
 - git remote set-url origin https://${GH_TOKEN}@github.com/bigcreate/getting-started-example.git
-
 - git push --follow-tags --no-verify origin prelerna
 
