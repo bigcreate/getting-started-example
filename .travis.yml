@@ -3,7 +3,7 @@ branches:
   - prelerna
 
 # Set the language Travis CI should expect.
-language: node_js
+language: bash
 
 # Set the Node.js version you’d like Travis to use. Add more versions as you like.
 node_js:
