@@ -3,7 +3,7 @@ branches:
   - prelerna
 
 # Set the language Travis CI should expect.
-language: bash
+language: node_js
 
 # Set the Node.js version you’d like Travis to use. Add more versions as you like.
 node_js:
@@ -19,5 +19,5 @@ install: # Hook provided by Travis CI
 - npm install
 
 script:
-- 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then bash ./travis/publish; fi'
-- 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then bash ./travis/verification; fi'
+- 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then bash chmod u+x  ./travis/publish; fi'
+- 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then bash chmod u+x  ./travis/verification; fi'
