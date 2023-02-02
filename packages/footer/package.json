@@ -1,5 +1,5 @@
 {
-  "name": "footer",
+  "name": "my_test_package_footer",
   "version": "1.0.5",
   "main": "dist/index.js",
   "scripts": {
