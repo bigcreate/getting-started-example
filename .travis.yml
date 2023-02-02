@@ -19,5 +19,5 @@ install: # Hook provided by Travis CI
 - npm install
 
 script:
-- 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then bash ./.travis/publish; fi'
-- 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then bash ./.travis/verification; fi'
+- 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then bash ./travis/publish; fi'
+- 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then bash ./travis/verification; fi'
