@@ -1,0 +1,3 @@
+# Tell Travis CI to run the test for your Node application
+script:
+- echo "publish"
